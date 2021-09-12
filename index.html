@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>HouseFlix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <h1>HouseFlix</h1>
+            <button class="btn-add-movie" onclick="showAddMoviesModal()">
+            Adicionar filme
+            </button>
+        </div>
+    </header>
+
+    <form id="movieForm">
+        <h3>Titulo do filme</h3>
+        <input type="text" id="movieTitle" />
+
+        <h3>Descrição</h3>
+        <input type="text" id="description" />
+
+        <h3>Atores</h3>
+        <input type="text" id="actors" />
+
+        <h3>Imagem</h3>
+        <input type="text" id="image" />
+
+        <button type="submit">Cadastrar filme</button>
+
+        <p class="alert"></p>
+    </form>
+
+    <div class="content"></div>
+
+    <script src="movies.js"></script>
+</body>
+</html>
